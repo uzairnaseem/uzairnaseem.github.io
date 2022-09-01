@@ -3533,7 +3533,7 @@ button.btn--pill {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../assets/header-bg-3000.jpg);
+  background-image: url(https://res.cloudinary.com/damrfet8a/image/upload/v1662022052/assets/header-bg-3000_skoe0c.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3863,8 +3863,8 @@ button.btn--pill {
 .s-about {
   --color-border: var(--color-gray-16);
   background-color: var(--color-gray-17);
-  padding-top: calc(6 * var(--space));
-  padding-bottom: var(--vspace-4);
+  padding-top: calc(3 * var(--space));
+  padding-bottom: var(--vspace-1_25);
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -3942,7 +3942,7 @@ button.btn--pill {
 
 @media screen and (max-width: 800px) {
   .s-about {
-    padding-top: var(--vspace-5);
+    padding-top: var(--vspace-3);
   }
   .s-about__pic {
     display: none;
@@ -4252,6 +4252,15 @@ button.btn--pill {
 
 .modal-popup__desc {
   padding: 0 4rem 1.2rem;
+}
+
+.modal-popup__desc p {
+  margin-bottom: var(--vspace-0_5);
+}
+
+.modal-popup__desc strong {
+  display: flex;
+  margin-bottom: var(--vspace-0_125);
 }
 
 .modal-popup__cat {
