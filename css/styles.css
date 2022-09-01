@@ -3596,7 +3596,7 @@ button.btn--pill {
   font-weight: 400;
   font-size: 2.4rem;
   line-height: 1.667;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(245, 242, 242, 0.5);
   margin-top: var(--vspace-0_5);
   margin-right: auto;
   margin-left: auto;
@@ -3607,7 +3607,7 @@ button.btn--pill {
 
 .s-hero__content h3 span,
 .s-hero__content h3 a {
-  color: white;
+  color: rgb(125, 125, 125);
 }
 
 .s-hero__content h3::after {
@@ -3616,7 +3616,7 @@ button.btn--pill {
   text-align: center;
   height: 1px;
   width: 300px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgb(92, 91, 91);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   position: absolute;
@@ -4254,13 +4254,24 @@ button.btn--pill {
   padding: 0 4rem 1.2rem;
 }
 
-.modal-popup__desc p {
+.modal-popup__desc p,
+.modal-popup__desc span {
   margin-bottom: var(--vspace-0_5);
 }
 
 .modal-popup__desc strong {
   display: flex;
-  margin-bottom: var(--vspace-0_125);
+  margin-bottom: var(--vspace-0_25);
+}
+
+.modal-popup__desc span {
+  display: inline-flex;
+  padding: 0.5rem 1.2rem;
+  background-color: var(--color-gray-1);
+  margin-right: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .modal-popup__cat {
