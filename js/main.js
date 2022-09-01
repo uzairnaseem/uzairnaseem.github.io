@@ -50,7 +50,7 @@ function filterProjects(tabName) {
     const preloader = document.querySelector("#preloader");
     if (!preloader) return;
 
-    window.addEventListener("load", function () {
+    setTimeout(() => {
       document.querySelector("body").classList.remove("ss-preload");
       document.querySelector("body").classList.add("ss-loaded");
 
@@ -59,7 +59,7 @@ function filterProjects(tabName) {
           this.style.display = "none";
         }
       });
-    });
+    }, 1000);
 
     // force page scroll position to top at page refresh
     // window.addEventListener('beforeunload' , function () {
