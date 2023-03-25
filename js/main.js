@@ -399,12 +399,11 @@ function filterProjects(tabName) {
         var elementVisible = 15.2;
 
         if (elementTop < windowHeight - elementVisible) {
-          elements[0].classList.add("percent80"); // ReactJS
-          elements[1].classList.add("percent75"); // NextJs
-          elements[2].classList.add("percent80"); // Redux
-          elements[3].classList.add("percent75"); // NodeJS
-          elements[4].classList.add("percent70"); // Typescript
-          elements[5].classList.add("percent75"); // Javascript
+          const bars = document.getElementsByName("progress");
+          [...bars].map((element, index) => {
+            const className = `percent${element.outerText.replace("%", "")}`;
+            elements[index].classList.add(className);
+          });
         }
       }
     };
