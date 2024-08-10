@@ -6,34 +6,44 @@
 function filterProjects(tabName) {
   switch (tabName) {
     case "ReactJS":
-      ["alisuq", "pluto", "frostie", "linked"].forEach(
+      ["alisuq", "pluto", "frostie", "linked", "college-advisor"].forEach(
         (id) => (document.getElementById(id).style.display = "flex")
       );
-      ["votion", "cto"].forEach(
+      ["votion", "cto", "breezy", "buddyx"].forEach(
         (id) => (document.getElementById(id).style.display = "none")
       );
       break;
 
     case "NextJS":
-      ["alisuq", "pluto", "frostie", "linked", "cto"].forEach(
+      ["alisuq", "pluto", "frostie", "linked", "cto", "college-advisor"].forEach(
         (id) => (document.getElementById(id).style.display = "none")
       );
-      document.getElementById("votion").style.display = "flex";
+      ["votion", "breezy", "buddyx"].forEach(
+        (id) => (document.getElementById(id).style.display = "flex")
+      );
       break;
 
     case "NodeJS":
-      ["frostie"].forEach(
+      ["frostie", "college-advisor", "buddyx"].forEach(
         (id) => (document.getElementById(id).style.display = "flex")
       );
-      ["alisuq", "votion", "pluto", "linked", "cto"].forEach(
+      ["alisuq", "votion", "pluto", "linked", "cto", "breezy"].forEach(
         (id) => (document.getElementById(id).style.display = "none")
       );
       break;
 
     default:
-      ["alisuq", "votion", "pluto", "frostie", "linked", "cto"].forEach(
-        (id) => (document.getElementById(id).style.display = "flex")
-      );
+      [
+        "alisuq",
+        "votion",
+        "pluto",
+        "frostie",
+        "linked",
+        "cto",
+        "college-advisor",
+        "breezy",
+        "buddyx",
+      ].forEach((id) => (document.getElementById(id).style.display = "flex"));
       break;
   }
 }
