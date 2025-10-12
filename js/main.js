@@ -6,18 +6,30 @@
 function filterProjects(tabName) {
   switch (tabName) {
     case "ReactJS":
-      ["alisuq", "pluto", "frostie", "linked", "college-advisor"].forEach(
-        (id) => (document.getElementById(id).style.display = "flex")
-      );
-      ["votion", "cto", "breezy", "buddyx"].forEach(
+      [
+        "alisuq",
+        "pluto",
+        "frostie",
+        "linked",
+        "college-advisor",
+        "votion",
+        "breezy",
+        "buddyx",
+      ].forEach((id) => (document.getElementById(id).style.display = "flex"));
+      ["cto"].forEach(
         (id) => (document.getElementById(id).style.display = "none")
       );
       break;
 
     case "NextJS":
-      ["alisuq", "pluto", "frostie", "linked", "cto", "college-advisor"].forEach(
-        (id) => (document.getElementById(id).style.display = "none")
-      );
+      [
+        "alisuq",
+        "pluto",
+        "frostie",
+        "linked",
+        "cto",
+        "college-advisor",
+      ].forEach((id) => (document.getElementById(id).style.display = "none"));
       ["votion", "breezy", "buddyx"].forEach(
         (id) => (document.getElementById(id).style.display = "flex")
       );
